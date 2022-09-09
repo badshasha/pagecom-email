@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" Version="8.0.7-develop.575" />
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.7-develop.575" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\pagecom.common\pagecom.common.csproj" />
+      <ProjectReference Include="..\pagecom.email.data\pagecom.email.data.csproj" />
+      <ProjectReference Include="..\pagecom.email.infastructure\pagecom.email.infastructure.csproj" />
+    </ItemGroup>
+
+</Project>
